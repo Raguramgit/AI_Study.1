@@ -20,7 +20,7 @@ import streamlit as st
 # Page Setup & Styling
 # ---------------------------
 st.set_page_config(
-    page_title="Sabari Musicals Assistant",
+    page_title="Sabari Musicals",
     page_icon="🎵",
     layout="wide",
     initial_sidebar_state="auto",
