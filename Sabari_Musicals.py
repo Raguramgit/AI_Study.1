@@ -22,7 +22,8 @@ import streamlit as st
 st.set_page_config(
     page_title="Sabari Musicals Assistant",
     page_icon="🎵",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="auto",
 )
 
 # Simple brand palette
@@ -157,11 +158,11 @@ if "deliveries" not in st.session_state:
 # ---------------------------
 # Header
 # ---------------------------
-left, mid, right = st.columns([2,3,2])
+left, mid, right = st.columns([3,2,3])
 with left:
-    st.markdown("### 🎵 Sabari Musicals <span class='badge'>30+ years</span>", unsafe_allow_html=True)
+    st.markdown("# 🎵 Sabari Musicals Pvt Ltd <span class='badge'>  30+ years of Experiance in Musical Industry</span>", unsafe_allow_html=True)
 with mid:
-    st.markdown("<div class='small'>Mon–Fri 8:30AM–9:30PM · Sat 10AM–6PM · Sun Holiday</div>", unsafe_allow_html=True)
+    st.markdown("<div class='large'>Mon–Fri 8:30AM–9:30PM · Sat 10AM–6PM · Sun Holiday</div>", unsafe_allow_html=True)
 with right:
     st.metric("Customer Satisfaction", "4.9/5", "+107 reviews")
 
@@ -183,14 +184,16 @@ qa = st.sidebar.radio(
     ],
     index=0,
 )
-
-st.sidebar.info("Warm, professional, and here to help in simple language.")
-
+st.sidebar.markdown("---")
+st.sidebar.markdown("#### Contact Us")
+st.sidebar.markdown("#### Visit us: 123 Music Lane, Melody City, 56789")
+st.sidebar.markdown("📞 +91 98765 43210")
+st.sidebar.markdown("✉️SM@musicland.com")
 # ---------------------------
 # BUY / SELL
 # ---------------------------
 if qa == "Buy/Sell":
-    st.subheader("Buy & Sell Instruments")
+    st.markdown("# Buy & Sell Instruments")
 
     df = df_catalog()
     search = st.text_input("Search by name/brand/SKU", placeholder="e.g., flute, Bose, GTR-AC-01")
@@ -206,7 +209,7 @@ if qa == "Buy/Sell":
 
     st.dataframe(view, use_container_width=True, hide_index=True)
 
-    st.markdown("#### Add to Cart")
+    st.markdown("# Add to Cart")
     sku = st.selectbox("Select SKU", view["SKU"] if not view.empty else [""], index=0)
     qty = st.number_input("Quantity", value=1, min_value=1, step=1)
     add = st.button("Add Item to Cart", use_container_width=True)
@@ -248,7 +251,7 @@ if qa == "Buy/Sell":
                     f"Thanks {cust_name}! We will contact you at {cust_phone} to complete the purchase.")
 
     st.markdown("---")
-    st.markdown("#### Want to Sell Your Gear?")
+    st.markdown("# Want to Sell Your Gear?")
     with st.form("sell_form"):
         si_item = st.text_input("Item name & model")
         si_cond = st.selectbox("Condition", ["Mint", "Good", "Fair", "Needs repair"])
@@ -265,7 +268,7 @@ if qa == "Buy/Sell":
 # STUDIO BOOKING
 # ---------------------------
 elif qa == "Studio Booking":
-    st.subheader("Recording Studio Appointments")
+    st.markdown("# Recording Studio Appointments")
 
     bdate = st.date_input("Choose date", value=date.today(), min_value=date.today())
 
@@ -297,7 +300,7 @@ elif qa == "Studio Booking":
                     st.success(f"Appointment booked: {appt_id} on {bdate} at {slot}.")
 
     if st.session_state.appointments:
-        st.markdown("#### Your Appointments")
+        st.markdown("# Your Appointments")
         adf = pd.DataFrame.from_dict(st.session_state.appointments, orient="index")
         st.dataframe(adf, use_container_width=True)
 
@@ -324,7 +327,7 @@ elif qa == "Studio Booking":
 # REPAIRS
 # ---------------------------
 elif qa == "Repairs":
-    st.subheader("Repair Estimates & Intake")
+    st.markdown("# Repair Estimates & Intake")
     colA, colB = st.columns(2)
     with colA:
         device = st.selectbox("Instrument/Device", list(REPAIR_BASE.keys()))
@@ -350,7 +353,7 @@ elif qa == "Repairs":
             st.caption(f"Base ₹{base} + Severity ₹{sev_add} + Parts ₹{parts_cost} {'+ Urgent 20%' if urgent else ''}")
 
     st.markdown("---")
-    st.markdown("#### Create Repair Ticket")
+    st.markdown("# Create Repair Ticket")
     with st.form("repair_form"):
         r_name = st.text_input("Your Name")
         r_phone = st.text_input("Phone")
@@ -367,7 +370,7 @@ elif qa == "Repairs":
 # PURCHASE ORDERS
 # ---------------------------
 elif qa == "Purchase Orders":
-    st.subheader("Create & Validate Purchase Orders")
+    st.markdown("# Create & Validate Purchase Orders")
 
     df = df_catalog()
     with st.form("po_form"):
@@ -424,7 +427,7 @@ elif qa == "Purchase Orders":
                 )
 
     if st.session_state.purchase_orders:
-        st.markdown("#### Existing POs")
+        st.markdown("# Existing POs")
         podf = pd.DataFrame(st.session_state.purchase_orders)
         st.dataframe(podf[["PO_ID", "Buyer", "Vendor", "Total", "Date"]], use_container_width=True, hide_index=True)
 
@@ -432,7 +435,7 @@ elif qa == "Purchase Orders":
 # DELIVERY
 # ---------------------------
 elif qa == "Delivery":
-    st.subheader("Delivery Request")
+    st.markdown("# Delivery Request")
 
     with st.form("delivery_form"):
         d_name = st.text_input("Customer Name")
@@ -466,7 +469,7 @@ elif qa == "Delivery":
             st.json(rec)
 
     if st.session_state.deliveries:
-        st.markdown("#### Deliveries")
+        st.markdown("# Deliveries")
         ddf = pd.DataFrame(st.session_state.deliveries)
         st.dataframe(ddf, use_container_width=True, hide_index=True)
 
@@ -474,26 +477,20 @@ elif qa == "Delivery":
 # FAQs
 # ---------------------------
 elif qa == "FAQs":
-    st.subheader("FAQs & Quick Info")
+    st.markdown("# FAQs & Quick Info")
 
     with st.expander("What services do you offer?"):
-        st.write("\n".join([f"• {s}" for s in SERVICES]))
+        st.write("\n".join([f"• {s}\n" for s in SERVICES]))
     with st.expander("Working hours"):
-        st.write("Mon–Fri: 8:30 AM – 9:30 PM\nSat: 10:00 AM – 6:00 PM\nSun: Holiday")
+        st.write("Mon–Fri: 8:30 AM – 9:30 PM  Sat: 10:00 AM – 6:00 PM Sun: Holiday")
     with st.expander("Can you suggest a low-cost flute?"):
         st.write("I’m happy to help! We have flutes from ₹2000 to ₹10000. Which one would you like to buy?")
     with st.expander("Office audio/video setup options"):
-        st.write("Option 1: JBL with Behringer HA400 4-Channel Headphone Amplifier\nOption 2: Bose L1 Pro16 Portable Linear Array PA System")
+        st.write("Option 1: JBL with Behringer HA400 4-Channel Headphone Amplifier\n Option 2: Bose L1 Pro16 Portable Linear Array PA System")
 
 # ---------------------------
 # Footer Banner
 # ---------------------------
-st.markdown(
-    """
-<div class='card'>
-  <b>Need help deciding?</b>
-  <div class='small'>Talk to our team — warm, professional, and humble guidance in simple language.</div>
-</div>
-""",
-    unsafe_allow_html=True,
-)
+st.markdown("### Thank you for Purchasing in Sabari Musicals! 🎶 ")
+st.markdown("### Visit again soon for more services!")
+
