@@ -1,0 +1,13 @@
+{
+  "Raguraman": {
+    "name": "Raguraman",
+    "email": "raguram7393@gmail.com",
+    "goal_l": 10.0,
+    "reminders": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ],
+    "active": true
+  }
+}

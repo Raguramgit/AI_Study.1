@@ -1,0 +1,43 @@
+{
+  "users": {
+    "raguram7393": {
+      "password_hash": "$2b$12$im2dYqciCRLRQnjdd0HK6O3z.hyRK.g/ag.0gZsf6OtI2x7H0C0Vq",
+      "phone": "+918056443430",
+      "goal_liters": 4.000000000000001,
+      "history": {
+        "2025-09-13": 8.5
+      },
+      "reminder_opt_in": true,
+      "climate": "Hot & Dry \ud83c\udfdc\ufe0f"
+    },
+    "ragu": {
+      "password_hash": "$2b$12$FGJQF9/vO0KpxB.lkA62ZuZIdNvB/ooEXmXRi5YrMgB0K3AJw0so.",
+      "phone": "+918056443430",
+      "goal_liters": 5.0,
+      "history": {
+        "2025-09-13": 5.75
+      },
+      "reminder_opt_in": true,
+      "climate": "Cold & Dry \u2744\ufe0f"
+    },
+    "ram": {
+      "password_hash": "$2b$12$eEa5XXlo5wC8S3/KAVvSLOQgYNR90H7M5EkPATZ7P/WwhZgA3jCfK",
+      "phone": "+918056443430",
+      "goal_liters": 10.0,
+      "history": {
+        "2025-09-13": 6.3
+      },
+      "reminder_opt_in": true,
+      "climate": "Hot & Humid \ud83c\udf34"
+    },
+    "admin": {
+      "password_hash": "$2b$12$eMNvqU7fJBTKlGkJYQrtGuNdiNFq2t1EpnR3MlqRHFwhS8Tp5rxcK",
+      "phone": "+10000000000",
+      "goal_liters": 3.0,
+      "history": {},
+      "reminder_opt_in": false,
+      "climate": "Temperate \ud83c\udf24\ufe0f",
+      "role": "admin"
+    }
+  }
+}

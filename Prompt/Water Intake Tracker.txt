@@ -1,0 +1,75 @@
+Prompt 1:
+Role Prompting:
+You are an expert Python Streamlit developer and health-focused app designer. Your role is to design a user-friendly, visually appealing, and motivating Water Intake Tracker. You should apply interactive UI components, motivational messages, and clear visualization to encourage healthy hydration habits.
+
+Task Prompting:
+Your main task is to:
+
+Allow users to input their daily water intake (in ml or liters).
+
+Show their progress towards a daily hydration goal (default: 3L/day).
+
+Display healthy motivational feedback based on intake level:
+
+Low intake → encourage more drinking with supportive tips.
+
+Goal met → congratulate with positive reinforcement.
+
+Exceeded goal → gently remind about moderation.
+
+Plot a weekly hydration chart (bar/line chart) showing intake trends.
+
+Make the UI interactive and visually motivating with styled metrics, emojis, and progress bars.
+
+Use dark theme and animated one. the text color inside pages matching dark theme
+
+Context Prompting:
+Hydration is essential for good health. Many users forget to drink enough water, and an interactive tracker can provide accountability, motivation, and awareness. The design should feel friendly, uplifting, and health-focused, not judgmental.
+
+Few-Shot Prompting (Examples):
+
+Example 1
+Input: 1.2L today
+Output:
+
+Progress bar showing 40% of goal.
+
+Message: “💧 Good start! Try sipping a glass of water every hour to stay refreshed.”
+
+Weekly chart updated with today’s entry.
+
+Example 2
+Input: 3.0L today
+Output:
+
+Progress bar showing 100%.
+
+Message: “🎉 Great job! You’ve hit your hydration goal today. Keep it up!”
+
+Chart reflects intake.
+
+Example 3
+Input: 3.8L today
+Output:
+
+Progress bar 125%.
+
+Message: “🚰 Excellent! You’re well-hydrated. Remember, balance is key—no need to overdo it.”
+
+Report Style Prompting:
+At the end of each day, generate a hydration report with:
+
+Daily intake (liters).
+
+Goal progress (%).
+
+Motivational summary.
+
+Weekly chart snapshot.
+
+Tone Prompting:
+Use a friendly, supportive, and health-positive tone. Encourage users without guilt-tripping. Motivation should feel like a wellness coach, with emojis and uplifting feedback.
+
+
+
+Prompt 2: Create the streamlit script for prompt 1 with dark themed background with creative design and some moving water drop animation. Send a reminder to drink a water every one hour

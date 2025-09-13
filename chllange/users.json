@@ -1,0 +1,50 @@
+{
+  "Raguram": {
+    "password_hash": "1dc44df9e77176f52392688ea84ab2535df2166532e5aeceb40d9a5ace822b6f",
+    "phone": "8056443430",
+    "goal_l": 10.0,
+    "name": "Raguraman",
+    "reminders": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ]
+  },
+  "Raguram07": {
+    "password_hash": "$2b$12$21qxLUp5Ghq0K4W3Wn0yjOzb5yMYEMrV0NBp.MLqqEJHUfGQVYr36",
+    "phone": "8056443430",
+    "goal_l": 10.0,
+    "name": "Raguraman",
+    "verified": false,
+    "verification_code": "952535",
+    "reminders": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ]
+  },
+  "Raguram77": {
+    "password_hash": "$2b$12$5e.KWJ.2cWEptMbgEr3ThegsZC/ixsLMlM63uYGLfObGuoXIc0M6O",
+    "phone": "8056443430",
+    "goal_l": 10.0,
+    "name": "Raguraman",
+    "verified": true,
+    "reminders": [
+      "09:00",
+      "13:00",
+      "22:00"
+    ]
+  },
+  "Raguram7": {
+    "password_hash": "$2b$12$ZooLHpl1d4QuLa0Gmv.ZLuQwVKkhgboFiVeHQkJ8EiPbwIe3C4nLG",
+    "phone": "8056443430",
+    "goal_l": 10.0,
+    "name": "Raguraman",
+    "verified": true,
+    "reminders": [
+      "09:00",
+      "13:00",
+      "22:00"
+    ]
+  }
+}
