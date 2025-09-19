@@ -38,6 +38,17 @@
       "reminder_opt_in": false,
       "climate": "Temperate \ud83c\udf24\ufe0f",
       "role": "admin"
+    },
+    "selva": {
+      "password_hash": "$2b$12$QM.7BAO5f92OTyxcRieBq.S95.yi8V5rAvG9V.AYqiF7fOcIf7Kru",
+      "phone": "+918056443430",
+      "goal_liters": 10.0,
+      "history": {
+        "2025-09-18": 4.0
+      },
+      "reminder_opt_in": true,
+      "climate": "Hot & Dry \ud83c\udfdc\ufe0f",
+      "role": "user"
     }
   }
 }

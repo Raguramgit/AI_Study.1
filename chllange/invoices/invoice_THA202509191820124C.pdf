@@ -1,0 +1,10 @@
+<h2>Eagle Restaurant Restaurant</h2>
+<p>Invoice: THA202509191820124C<br/>Date: 19 Sep 2025 18:20</p>
+<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse;width:100%'>
+<tr><th>No</th><th>Item</th><th>Qty</th><th>Unit</th><th>Total</th></tr>
+<tr><td>1</td><td>Eagle Restaurant Mutton Biryani</td><td>1</td><td>₹280.00</td><td>₹280.00</td></tr>
+<tr><td>2</td><td>Chicken 65</td><td>1</td><td>₹220.00</td><td>₹220.00</td></tr>
+<tr><td>3</td><td>Mutton Milagu Soup</td><td>1</td><td>₹120.00</td><td>₹120.00</td></tr>
+</table>
+<p>Subtotal: ₹620.00<br/>GST: ₹111.60<br/><strong>Total: ₹731.60</strong></p>
+<p>This is a computer-generated invoice.</p>

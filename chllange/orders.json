@@ -1,0 +1,159 @@
+[
+  {
+    "id": "d7ba2506-709d-4cab-8d83-ab3b856300b2",
+    "customer": {
+      "name": "Raguraman",
+      "phone": "8056443430",
+      "email": "raguram7393@gmail.com",
+      "address": "Porur"
+    },
+    "orderType": "dine-in",
+    "paymentMethod": "upi-phonepe",
+    "subtotal": 460.0,
+    "gstAmount": 82.8,
+    "total": 542.8,
+    "orderItems": [
+      {
+        "menuItemId": "1",
+        "quantity": 1,
+        "unitPrice": 280.0,
+        "totalPrice": 280.0
+      },
+      {
+        "menuItemId": "4",
+        "quantity": 1,
+        "unitPrice": 180.0,
+        "totalPrice": 180.0
+      }
+    ],
+    "createdAt": "2025-09-19T15:41:51.936161"
+  },
+  {
+    "id": "THA202509191648EA95",
+    "customer": {
+      "name": "Raguraman",
+      "phone": "8056443430",
+      "email": "raguram7393@gmail.com",
+      "address": "Porur"
+    },
+    "orderType": "dine-in",
+    "paymentMethod": "upi-phonepe",
+    "subtotal": 480.0,
+    "gstAmount": 86.39999999999999,
+    "total": 566.4,
+    "orderItems": [
+      {
+        "menuItemId": "2",
+        "quantity": 2,
+        "unitPrice": 240.0,
+        "totalPrice": 480.0
+      }
+    ],
+    "createdAt": "2025-09-19T16:48:49.494042"
+  },
+  {
+    "id": "THA202509191724F86F",
+    "customer": {
+      "name": "Raguraman",
+      "phone": "8056443430",
+      "email": "raguram7393@gmail.com",
+      "address": "Porur"
+    },
+    "orderType": "dine-in",
+    "paymentMethod": "cash",
+    "subtotal": 280.0,
+    "gstAmount": 50.4,
+    "total": 330.4,
+    "orderItems": [
+      {
+        "menuItemId": "21",
+        "quantity": 1,
+        "unitPrice": 40.0,
+        "totalPrice": 40.0
+      },
+      {
+        "menuItemId": "2",
+        "quantity": 1,
+        "unitPrice": 240.0,
+        "totalPrice": 240.0
+      }
+    ],
+    "createdAt": "2025-09-19T17:24:45.069276"
+  },
+  {
+    "id": "THA202509191820124C",
+    "customer": {
+      "name": "Raguraman",
+      "phone": "8056443430",
+      "email": "raguram7393@gmail.com",
+      "address": "Porur"
+    },
+    "orderType": "dine-in",
+    "paymentMethod": "upi-phonepe",
+    "subtotal": 620.0,
+    "gstAmount": 111.6,
+    "total": 731.6,
+    "orderItems": [
+      {
+        "menuItemId": "1",
+        "quantity": 1,
+        "unitPrice": 280.0,
+        "totalPrice": 280.0
+      },
+      {
+        "menuItemId": "5",
+        "quantity": 1,
+        "unitPrice": 220.0,
+        "totalPrice": 220.0
+      },
+      {
+        "menuItemId": "9",
+        "quantity": 1,
+        "unitPrice": 120.0,
+        "totalPrice": 120.0
+      }
+    ],
+    "createdAt": "2025-09-19T18:20:05.440988"
+  },
+  {
+    "id": "THA202509191824C30F",
+    "customer": {
+      "name": "Raguraman",
+      "phone": "8056443430",
+      "email": "raguram7393@gmail.com",
+      "address": "Porur"
+    },
+    "orderType": "dine-in",
+    "paymentMethod": "upi-gpay",
+    "subtotal": 830.0,
+    "gstAmount": 149.4,
+    "total": 979.4,
+    "orderItems": [
+      {
+        "menuItemId": "1",
+        "quantity": 1,
+        "unitPrice": 280.0,
+        "totalPrice": 280.0
+      },
+      {
+        "menuItemId": "5",
+        "quantity": 1,
+        "unitPrice": 220.0,
+        "totalPrice": 220.0
+      },
+      {
+        "menuItemId": "13",
+        "quantity": 1,
+        "unitPrice": 300.0,
+        "totalPrice": 300.0
+      },
+      {
+        "menuItemId": "20",
+        "quantity": 1,
+        "unitPrice": 30.0,
+        "totalPrice": 30.0
+      }
+    ],
+    "createdAt": "2025-09-19T18:24:23.920759"
+  }
+]
